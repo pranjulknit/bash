@@ -1,0 +1,156 @@
+// to change file permission
+chmod +x file_name
+
+// to know permissions of file
+ls -ltr
+
+// for 
+comments
+
+// single line comments
+
+#
+
+// multiline comments
+<<comment
+
+comment
+
+// variable
+
+var_name = value
+
+x = $var_name
+
+// arrays
+
+//values seprated by space
+myArray=( 1 2 Hello "Hey man")
+
+// all values you can get
+myArray[*]
+
+// length of array
+
+${#myArray[*]}
+
+
+// Arrays with key-value
+
+declare -A myArray
+
+myArray=( [name]=Paul [age]=20 )
+
+echo "${myArray[name]}"
+
+// String operations
+
+myvar="Hey Buddy,How are you?"
+myvarLength=${#myvar}
+echo "Length of the myVar is$myvarLength"
+
+// upper case
+
+myvar^^
+
+//lower case
+
+myvar,,
+
+//replace
+
+replace=${myvar/world/Buddy}
+
+//slice
+
+slice=${myvar:6:11}
+
+
+
+// taking input from user
+
+read <var_name>
+
+// taking input in a line
+
+read -p "your name" name
+
+two times dd for delete a line
+
+
+// arith operations
+
+use let command or double brackets
+
+
+// if-else
+
+if [$marks -gt 40]
+
+then  
+	echo "You are pass"
+else
+	echo "You are fail"
+
+fi
+
+we can use elif also for else-if
+// other commands
+equal -eq/==
+
+Greaterthanorequalto ge
+
+lessthanorequalto -le
+
+Notequal -ne/!=
+
+Greaterthan -gt
+
+Lessthan -lt
+
+
+
+
+// switch statement
+
+#!/bin/bash
+
+echo "Provide an option"
+echo "a for print date"
+echo "b for list of scripts"
+echo "c to check for current loaction"
+
+
+
+read choice
+
+case $choice in
+        a)date;;
+        b)ls;;
+        c)pwd;;
+        *)echo "Please provide valid input"
+esac
+
+
+// logical operator
+
+&& , || 
+
+
+// for loop 
+
+#!/bin/bash
+
+for i in 1 2 3 4 5 6 7 8 9 10
+do
+        echo "number is $i"
+done
+
+
+
+for name in Raju Shyam Pranjul
+
+do  echo "name in $name"
+
+done
+
